@@ -1,0 +1,61 @@
+
+
+/* .button2{
+    background-color: black;
+    text-align: center;
+    color: aquamarine;
+
+} */
+
+/* Basic button styles */
+.button2 {
+    position: center;
+    text-align: justify;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  /* Neon light animation */
+  .button2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #00f;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .button2:hover::before {
+    opacity: 1;
+    animation: neon-travel 1s linear infinite;
+  }
+  
+  /* Neon light travel animation */
+  @keyframes neon-travel {
+    0% {
+      transform: translateX(-100%);
+    }
+    25% {
+      transform: translateY(-100%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    75% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

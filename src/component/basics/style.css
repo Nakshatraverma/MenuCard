@@ -1,0 +1,126 @@
+body {
+  background-color: #fcfce0; /* Set your desired background color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.main-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 40px;
+  padding-right: 40px;
+  position: relative;
+  gap: 20px; /* Adjust the gap between cards as needed */
+  text-align: justify;
+}
+
+.card-container{
+  position: relative;
+  max-width: 400px; /* Set the maximum width as needed */
+  width: 100%; /* Set the width to 100% for responsiveness */
+  height: auto;
+}
+.card-number {
+    font-size: 1 rem;
+    font-weight: bold;
+    color: #333; 
+  }
+  
+  .card-circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc; 
+    text-align: center; 
+    line-height: 20px;
+  }
+  
+  .subtle {
+    opacity: 0.7;
+
+  }
+
+  .card-author {
+    display: block; 
+    margin-top: 5px; 
+  }
+
+  .card-description {
+    margin-bottom: 50px; /* Adjust the margin-bottom as needed */
+  }
+  
+  .card-read {
+    background-color: #eee;
+    padding: 5px 10px;
+    text-align: right;
+    display: inline-block; /* Ensure it's treated as a block element */
+  }
+  
+  .card-tag {
+    color: #49799e; 
+    cursor: pointer; 
+    margin-top: 20 px;
+    text-align: right;
+    font-size: large;
+  }
+  .card-tag:hover {
+    color: black; 
+  }  
+    
+  .card {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    margin-bottom: 15px;
+  }
+
+  .card-media {
+    width: 100%; /* Set the width to 100% of its container */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 400px; /* Set a maximum width to avoid stretching on larger screens */
+    display: block; /* Ensures the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally within its container */
+    position: relative;
+    margin-top: 10px;
+
+
+  }
+
+
+.card-body{
+  position: relative;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  height: 80px; /* Adjust the height as needed */
+  background-color: #f29393; /* Set your desired background color */
+  margin-bottom: 20px;
+}
+
+.btn-group {
+  display: flex;
+}
+
+.btn-item {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-family: 'Arial', sans-serif; /* Set your desired font style */
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  background-color: transparent;
+  color: #333; /* Set your desired text color */
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.btn-item:hover {
+  background-color: #fcfce0; /* Set your desired background color on hover */
+}
+
+
